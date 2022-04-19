@@ -1,0 +1,9 @@
+.user-input {
+	margin-top: 200px;
+}
+.user-input label {
+	display: block;
+}
+.user-input input {
+	padding: 15px;
+}
