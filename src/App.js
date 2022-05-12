@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-
 import UserInput from './components/UserInput';
 import CountDown from './components/CountDown';
+import styled from 'styled-components';
+
+const AppWrapper = styled.main`
+	height: 100vh;
+	width: 100vw;
+`
 
 function App() {
 	const [showUserInput, setShowUserInput] = useState(false);
@@ -13,11 +17,10 @@ function App() {
 		}
 	});
 	return (
-		<div className='App'>
+		<AppWrapper>
 			{showUserInput && <UserInput />}
-
 			{!showUserInput && <CountDown />}
-		</div>
+		</AppWrapper>
 	);
 }
 
